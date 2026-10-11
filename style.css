@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary-teal: #4b9b8e;
+    --dark-teal: #085d52;
+    --orange-accent: #e57d4a;
+    --light-bg: #f8f9fa;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Navbar & Header */
+.hero-section {
+    background: url('images/download.jpg') no-repeat center center/cover;
+    position: relative;
+    min-height: 520px;
+    padding-bottom: 40px;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+.btn-logout {
+    background-color: var(--orange-accent);
+    color: white !important;
+    border-radius: 5px;
+    padding: 5px 18px;
+    font-weight: 500;
+    border: none;
+}
+
+/* المربع الأخضر العلوي وتغيير الخط */
+.quote-card {
+    background-color: #55a38b;
+    color: white;
+    padding: 35px;
+    border-radius: 25px;
+    max-width: 420px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Courier Prime', monospace;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 40px;
+    letter-spacing: 1px;
+}
+
+/* Section Title */
+.section-title {
+    color: var(--dark-teal);
+    font-size: 2.2rem;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 4px;
+    background-color: var(--orange-accent);
+    bottom: -10px;
+    left: 15%;
+    border-radius: 2px;
+}
+
+/* Touch Section وتغيير خط العنوان */
+.touch-section {
+    background: linear-gradient(135deg, rgba(75, 155, 142, 0.85), rgba(75, 155, 142, 0.95)),
+        url('images/i-love-my-job-so-much.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0 80px 0;
+    margin-top: 50px;
+}
+
+.touch-section h2 {
+    font-family: 'Courier Prime', monospace;
+    font-size: 2.1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.touch-card {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
+    background: white;
+}
+
+.touch-card:hover {
+    transform: translateY(-8px);
+}
+
+.touch-card img {
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 15px 15px 0 15px;
+    width: calc(100% - 30px);
+}
+
+.touch-card .card-title {
+    color: var(--primary-teal);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.touch-card .card-text {
+    font-size: 0.82rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* Footer Section */
+.footer-section {
+    background-color: var(--dark-teal);
+    color: white;
+    border-top-left-radius: 120px;
+    border-top-right-radius: 120px;
+    padding: 60px 0 30px 0;
+    margin-top: 50px;
+}
+
+.footer-links h5 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+    color: #d1e7e4;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.copyright-text {
+    font-size: 0.85rem;
+    color: #bcded9;
+    font-weight: 400;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.2rem;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+/* تصفيف القائمة العلويّة في السنتر */
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    margin: 0 18px;
+    /* زيادة المسافات بين الروابط لتوزيعها بالمنتصف بشكل مريح */
+    font-size: 1rem;
+}
+
+/* محاذاة زر تسجيل الخروج في الشاشات الصغيرة */
+@media (max-width: 991px) {
+    .btn-logout {
+        margin-top: 15px;
+        display: inline-block;
+    }
+}
